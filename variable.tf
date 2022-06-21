@@ -5,5 +5,6 @@ variable "secret_key" {
   default = "RFoA5DLjY9RT+c9ruw5IfTf+biipFotfrH7sh7ji"
   }
 variable "region" {
+  type = string
   default = "ap-south-1"
   }
