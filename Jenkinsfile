@@ -2,12 +2,12 @@ pipeline {
     agent any
     
     tools {
-        terraform 'jenkins-terraform'
+        terraform 'terraform'
     }
     stages {
         stage ("checkout from GIT") {
             steps {
-                git branch: 'main',  url: 'https://github.com/BalarajuGolla/CICD-pipeline'
+                git branch: 'main',  url: 'https://github.com/Yaminiooty/CI-CD-yamsai.git'
             }
         }
         stage ("terraform init") {
